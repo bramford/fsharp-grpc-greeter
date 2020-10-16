@@ -14,7 +14,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Protobuf Include="Protos\greet.proto" GrpcServices="Client" />
+    <ProjectReference Include="..\GrpcGreeterLib\GrpcGreeterLib.csproj" />
   </ItemGroup>
 
 </Project>

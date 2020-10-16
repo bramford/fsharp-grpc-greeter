@@ -5,11 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
+    <Protobuf Include="Protos\greet.proto" GrpcServices="Both" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GrpcGreeterLib\GrpcGreeterLib.csproj" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.27.0" />
   </ItemGroup>
 
 </Project>
