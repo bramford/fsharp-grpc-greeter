@@ -1,4 +1,4 @@
-namespace GrpcGreeterFSharp
+namespace GrpcGreeter
 
 open System
 open System.Collections.Generic

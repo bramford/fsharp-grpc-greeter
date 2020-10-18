@@ -1,4 +1,4 @@
-namespace GrpcGreeterFSharp
+namespace GrpcGreeter
 
 open Microsoft.AspNetCore.Builder
 open Microsoft.AspNetCore.Hosting
