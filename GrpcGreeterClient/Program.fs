@@ -1,4 +1,4 @@
-namespace GrpcGreeterFSharpClient
+namespace GrpcGreeterClient
 
 open System
 open System.Net.Http
@@ -22,7 +22,7 @@ module Program =
         use channel = GrpcChannel.ForAddress("https://localhost:5001", options)
         let client = Greeter.GreeterClient(channel);
         let helloRequest = HelloRequest()
-        helloRequest.Name <- "GreeterClientFSharp"
+        helloRequest.Name <- "GreeterClient"
         async {
             let! reply = client.SayHelloAsync(helloRequest).ResponseAsync |> Async.AwaitTask
             Console.WriteLine("Greeting: " + reply.Message)
